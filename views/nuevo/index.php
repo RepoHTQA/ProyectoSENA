@@ -23,7 +23,7 @@
                 <input type="text" name="matricula" id="" required>
             </div>
             <div class="form-group">
-                <label for="nombre">Nombre</label><br>
+                <label for="nombre">Nombres</label><br>
                 <input type="text" name="nombre" id="" required>
            </div>
             <div class="form-group">
