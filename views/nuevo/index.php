@@ -12,14 +12,14 @@
     
 
     <div id="main">
-        <h1 class="center">Sección de Nuevo</h1>
+        <h1 class="center">Crear categorías</h1>
 
         <div class="center"><?php echo $this->mensaje; ?></div>
 
         <form class="form-horizontal" id="form1" action="  <?php echo constant('URL'); ?>nuevo/registrarAlumno" method="POST">
 
             <div class="form-group"> 
-                <label for="matricula">Matrícula</label><br>
+                <label for="matricula">Nombre de la categoria</label><br>
                 <input type="text" name="matricula" id="" required>
             </div>
             <div class="form-group">
