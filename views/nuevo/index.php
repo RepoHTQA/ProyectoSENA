@@ -26,10 +26,10 @@
                 <label for="nombre">Nombres</label><br>
                 <input type="text" name="nombre" id="" required>
            </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="apellido">Apellido</label><br>
                 <input type="text" name="apellido" id="" required>
-            </div>
+            </div> -->
 
             <div class="form-group">
             <input type="submit" class="btn btn-default" value="Registrar nuevo alumno">
