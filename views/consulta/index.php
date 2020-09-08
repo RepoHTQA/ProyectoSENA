@@ -9,18 +9,17 @@
 <body>
     <?php require 'views/header.php'; ?>
 
-    <div id="main">
+    <div id="">
         <h1 class="center">Ver categorías</h1>
 
-        <table id="table1">
+        <table id="table1" align="center" border="4" style="width:auto; height:20px;" class="table table-condensed table-bordered table-hover">
             <thead>
                 <tr> 
                     <th>#</th>
                     <th>Nombre categoria</th>
                     <th>Fecha creación</th>
                     <th>Estado</th>
-                    <th></th>
-                    <th></th>
+                    <th>Operación</th> 
                 </tr>
             </thead>
             <tbody>
@@ -35,8 +34,10 @@
                     <td><?php echo $categorias->cateNomb; ?></td>
                     <td><?php echo $categorias->cateFech; ?></td>
                     <td><?php echo $categorias->cateInact; ?></td>
-                    <td><button type="button" class="btn btn-success">Editar</button></td>
-                    <td><button type="button" class="btn btn-danger">Eliminar</button></td>
+                    <td>
+                    <button type="button" class="btn btn-primary">Editar</button>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                    </td>
                 </tr>
 
                 <?php } ?>
