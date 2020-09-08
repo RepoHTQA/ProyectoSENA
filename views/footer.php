@@ -1,3 +1,3 @@
 <div id="footer">
-© Harold Urueña 2020
+© Harold Urueña 2020 SISO versión 1.0
 </div>

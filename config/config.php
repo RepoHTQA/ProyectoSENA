@@ -1,9 +1,9 @@
 <?php
 
-define('URL', 'http://localhost/Proyectos/Empresa.sas/');
+define('URL', 'http://localhost/Proyectos/SISO/');
 
 define('HOST', 'localhost');
-define('DB', 'mvc');
+define('DB', 'SISO');
 define('USER', 'root');
 define('PASSWORD', "");
 define('CHARSET', 'utf8mb4');

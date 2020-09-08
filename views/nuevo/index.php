@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>SISO</title>
     
 </head>
 <body>
@@ -16,23 +16,15 @@
 
         <div class="center"><?php echo $this->mensaje; ?></div>
 
-        <form class="form-horizontal" id="form1" action="  <?php echo constant('URL'); ?>nuevo/registrarAlumno" method="POST">
+        <form class="form-horizontal" id="form1" action="  <?php echo constant('URL'); ?>nuevo/registrarCategorias" method="POST">
 
             <div class="form-group"> 
-                <label for="matricula">Nombre de la categoria</label><br>
-                <input type="text" name="matricula" id="" required>
+                <label for="cateNomb">Nombre de la categoría</label><br>
+                <input type="text" name="cateNomb" id="" required>
             </div>
+            
             <div class="form-group">
-                <label for="nombre">Nombres</label><br>
-                <input type="text" name="nombre" id="" required>
-           </div>
-            <!-- <div class="form-group">
-                <label for="apellido">Apellido</label><br>
-                <input type="text" name="apellido" id="" required>
-            </div> -->
-
-            <div class="form-group">
-            <input type="submit" class="btn btn-default" value="Registrar nuevo alumno">
+            <input type="submit" class="btn btn-default" value="Crear categoría">
             </div>
 
         </form>

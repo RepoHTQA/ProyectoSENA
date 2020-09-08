@@ -9,8 +9,8 @@ class NuevoModel extends Model{
     public function insert($datos){
         // insertar datos en la BD
         try{
-            $query = $this->db->connect()->prepare('INSERT INTO ALUMNOS (MATRICULA, NOMBRE, APELLIDO) VALUES(:matricula, :nombre, :apellido)');
-            $query->execute(['matricula' => $datos['matricula'], 'nombre' => $datos['nombre'], 'apellido' => $datos['apellido']]);
+            $query = $this->db->connect()->prepare('INSERT INTO categorias (cateId, cateNomb, cateFech, cateInact) VALUES(:cateId, :cateNomb, :cateFech, :cateInact)');
+            $query->execute(['cateId' => $datos['cateId'], 'cateNomb' => $datos['cateNomb'], 'cateFech' => $datos['cateFech'], 'cateInact' => $datos['cateInact']]);
             return true;
         }catch(PDOException $e){
             

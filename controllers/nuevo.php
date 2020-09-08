@@ -12,15 +12,17 @@ class Nuevo extends Controller{
         $this->view->render('nuevo/index');
     }
 
-    function registrarAlumno(){
+    function registrarCategorias(){
 
-        $matricula = $_POST['matricula'];
-        $nombre    = $_POST['nombre'];
-        $apellido  = $_POST['apellido'];
+        $cateId = $_POST['cateId'];
+        $cateNomb    = $_POST['cateNomb'];
+        $cateFech  = $_POST['cateFech'];
+        $cateInact  = $_POST['cateInact'];
+
 
         $mensaje = "";
 
-        if($this->model->insert(['matricula' => $matricula, 'nombre' => $nombre, 'apellido' => $apellido])){
+        if($this->model->insert(['cateId' => $cateId, 'cateNomb' => $cateNomb, 'cateFech' => $cateFech, 'cateInact' => $cateInact])){
             $mensaje = "Registro exitoso";
         }else{
             $mensaje = "La matrícula ya existe";

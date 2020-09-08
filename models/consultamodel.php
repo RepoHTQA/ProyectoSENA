@@ -1,6 +1,6 @@
 <?php
 
-include_once 'models/alumno.php';
+include_once 'models/categorias.php';
 
 
 class ConsultaModel extends Model{
@@ -15,13 +15,14 @@ class ConsultaModel extends Model{
 
         try{
 
-            $query = $this->db->connect()->query("SELECT*FROM alumnos");
+            $query = $this->db->connect()->query("SELECT*FROM categorias");
 
             while($row = $query->fetch()){
-                $item = new Alumno();
-                $item->matricula = $row['matricula'];
-                $item->nombre    = $row['nombre'];
-                $item->apellido  = $row['apellido'];
+                $item = new Categorias();
+                $item->cateId = $row['cateId'];
+                $item->cateNomb    = $row['cateNomb'];
+                $item->cateFech  = $row['cateFech'];
+                $item->cateInact  = $row['cateInact'];
 
                 array_push($items, $item);
             }
